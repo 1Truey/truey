@@ -303,6 +303,34 @@
                 font-size: 3em;
             }
         }
+
+        /* New CSS for Back to Top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff4081;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+
+        .back-to-top i {
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -414,7 +442,7 @@
             <div class="merch-grid">
                 <!-- Truey Oversized T-Shirt -->
                 <div class="merch-item">
-                    <img src="https://files.cdn.printful.com/files/c4e/c4e73c3fde6b7c288443b7ccd29b9fe1_preview.png" alt="Truey Oversized TShirt">
+                    <img src="https://cdn.printful.me/t/quick-stores/variants/w339/528107167edf1b1060d1__825" alt="Truey Oversized TShirt">
                     <h3>Truey Oversized TShirt</h3>
                     <select>
                         <option>Select Size</option>
@@ -440,6 +468,6 @@
             </form>
         </section>
     </div>
-</body>
-</html>
-<img src="https://files.cdn.printful.com/files/c4e/c4e73c3fde6b7c288443b7ccd29b9fe1_preview.png" alt="Truey Oversized TShirt">
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-
