@@ -94,6 +94,73 @@
             transform: scale(1.2);
         }
 
+        /* Updated merchandise styling */
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .merch-item {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .merch-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .merch-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            mix-blend-mode: screen;
+            filter: brightness(0.8) contrast(1.2);
+            object-fit: contain;
+            background: transparent;
+        }
+
+        /* Additional styling improvements */
+        .merch-item h3 {
+            margin: 15px 0;
+            color: #ff4081;
+            font-size: 1.2em;
+        }
+
+        .merch-item select {
+            margin: 10px 0;
+            padding: 12px;
+            width: 100%;
+            background: #2f2f2f;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .merch-item button {
+            background: #ff4081;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .merch-item button:hover {
+            background: #f50057;
+            transform: translateY(-2px);
+        }
+
+        /* Rest of your existing styles... */
         .music-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -212,51 +279,6 @@
             font-size: 0.9em;
         }
 
-        .merch-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .merch-item {
-            background: #1f1f1f;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .merch-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .merch-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        select, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            background: #2f2f2f;
-            border: none;
-            color: white;
-            border-radius: 5px;
-        }
-
-        button {
-            background: #ff4081;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background: #f50057;
-        }
-
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -284,27 +306,6 @@
             margin-bottom: 30px;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-            .youtube-button {
-                padding: 10px 20px;
-                font-size: 1em;
-            }
-            
-            .video-item iframe {
-                height: 300px;
-            }
-
-            .hero h1 {
-                font-size: 3em;
-            }
-        }
-
-        /* New CSS for Back to Top button */
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -330,6 +331,26 @@
 
         .back-to-top i {
             font-size: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .youtube-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+            
+            .video-item iframe {
+                height: 300px;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+            }
         }
     </style>
 </head>
@@ -440,7 +461,7 @@
         <section id="merch">
             <h2>Official Merch - All Shirts $45.00</h2>
             <div class="merch-grid">
-                <!-- Truey Oversized T-Shirt -->
+                <!-- Updated Merch Item -->
                 <div class="merch-item">
                     <img src="https://cdn.printful.me/t/quick-stores/variants/w339/528107167edf1b1060d1__825" alt="Truey Oversized TShirt">
                     <h3>Truey Oversized TShirt</h3>
@@ -470,4 +491,8 @@
     </div>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+</html>
