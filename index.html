@@ -118,8 +118,8 @@
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            mix-blend-mode: normal;
-            filter: brightness(1) contrast(1);
+            mix-blend-mode: screen;
+            filter: brightness(0.8) contrast(1.2);
             object-fit: contain;
             background: transparent;
         }
@@ -210,7 +210,6 @@
             background: #ff2d55;
             transform: translateY(-2px);
         }
-
         .video-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -352,7 +351,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation section remains the same -->
     <nav>
         <a href="#home">Home</a>
         <a href="#music">Music</a>
@@ -362,7 +360,6 @@
     </nav>
 
     <div class="container">
-        <!-- Hero section remains the same -->
         <section id="home" class="hero">
             <h1>TRUEY</h1>
             <div class="social-links">
@@ -384,22 +381,84 @@
             </div>
         </section>
 
-        <!-- Music section remains the same -->
         <section id="music">
-            <!-- Your existing music section content -->
+            <h2>Music</h2>
+            <div class="music-grid">
+                <div class="music-item">
+                    <h3>Listen on Spotify</h3>
+                    <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/artist/4rmY99M3U9vPh8wcSrtN7m?utm_source=generator" 
+                        width="100%" 
+                        height="352" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                    <a href="https://open.spotify.com/artist/4rmY99M3U9vPh8wcSrtN7m" 
+                       class="button spotify-button" 
+                       target="_blank">
+                        Follow on Spotify
+                    </a>
+                </div>
+                <div class="music-item">
+                    <h3>Listen on Apple Music</h3>
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+                        frameborder="0" 
+                        height="450" 
+                        style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" 
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                        src="https://embed.music.apple.com/us/artist/truey/1632518016">
+                    </iframe>
+                    <a href="https://music.apple.com/us/artist/truey/1632518016" 
+                       class="button apple-music-button" 
+                       target="_blank">
+                        Follow on Apple Music
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <!-- Videos section remains the same -->
         <section id="videos">
-            <!-- Your existing videos section content -->
+            <h2>Music Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/VvsfNvQYej8" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Shit Crazy Official Music Video</h3>
+                </div>
+
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/0uA6y1gz4-M" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Fake Killas (Official Music Video)</h3>
+                </div>
+
+                <div class="youtube-subscribe">
+                    <a href="https://youtube.com/@1trueyy?sub_confirmation=1" 
+                       class="youtube-button" 
+                       target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        Subscribe on YouTube
+                    </a>
+                    <div class="subscriber-note">Join the family!</div>
+                </div>
+            </div>
         </section>
 
-        <!-- Updated Merch section -->
         <section id="merch">
             <h2>Official Merch - All Shirts $45.00</h2>
             <div class="merch-grid">
                 <div class="merch-item">
-                    <img src="https://cdn.printful.me/t/quick-stores/products/w168/15740814-713-67edf1b036ff3__360" alt="Truey Oversized TShirt">
+                    <img src="https://cdn.printful.me/t/quick-stores/variants/w339/528107167edf1b1060d1__825" alt="Truey Oversized TShirt">
                     <h3>Truey Oversized TShirt</h3>
                     <select>
                         <option>Select Size</option>
@@ -415,7 +474,6 @@
             </div>
         </section>    
 
-        <!-- Contact section remains the same -->
         <section id="contact">
             <h2>Contact</h2>
             <form class="contact-form" action="https://formspree.io/f/tshotit@yahoo.com" method="POST">
@@ -427,7 +485,6 @@
         </section>
     </div>
 
-    <!-- Back to Top Button -->
     <a href="#home" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
